@@ -1,0 +1,104 @@
+{
+  "backend": "threadmill",
+  "date_utc": "2026-09-07T07:36:47.703419+00:00",
+  "host_python": "3.12.8",
+  "jobs_per_batch": 20,
+  "execution_slots": 4,
+  "repeats": 3,
+  "docker": {
+    "ServerVersion": "28.4.0",
+    "Architecture": "aarch64",
+    "NCPU": 8,
+    "MemTotal": 8218316800,
+    "OperatingSystem": "Docker Desktop"
+  },
+  "workloads": [
+    {
+      "sleep_seconds": 0,
+      "samples": [
+        {
+          "elapsed_seconds": 0.03422325011342764,
+          "verified": 20
+        },
+        {
+          "elapsed_seconds": 0.019643708132207394,
+          "verified": 20
+        },
+        {
+          "elapsed_seconds": 0.015422292053699493,
+          "verified": 20
+        }
+      ],
+      "median_batch_seconds": 0.019643708132207394,
+      "jobs_per_second": 1018.1377093059349
+    },
+    {
+      "sleep_seconds": 0.005,
+      "samples": [
+        {
+          "elapsed_seconds": 0.07966179214417934,
+          "verified": 20
+        },
+        {
+          "elapsed_seconds": 0.08095287531614304,
+          "verified": 20
+        },
+        {
+          "elapsed_seconds": 0.09268433274701238,
+          "verified": 20
+        }
+      ],
+      "median_batch_seconds": 0.08095287531614304,
+      "jobs_per_second": 247.05731478832038
+    }
+  ],
+  "setup": null,
+  "stack_start_and_setup_seconds": 1.2800203748047352,
+  "images": [
+    {
+      "ID": "sha256:70a416d0c62354c379ea7f473f5affd19f23c917adeb3a9c9b7ce39e6f97f3c9",
+      "ContainerName": "threadmill-local-http-server-1",
+      "Repository": "python",
+      "Tag": "3.12.8-slim",
+      "Platform": "linux/arm64/v8",
+      "Size": 150042540,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "image_digests": [
+    [
+      "python@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0"
+    ]
+  ],
+  "warmup": {
+    "elapsed_seconds": 0.08421866688877344,
+    "verified": 20
+  },
+  "memory_before": [
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.02%",
+      "Container": "396d31690649082959d658c01c207840a1caac47e9e6ebb40a9cf05ff2f40321",
+      "ID": "396d31690649",
+      "MemPerc": "0.26%",
+      "MemUsage": "20.42MiB / 7.654GiB",
+      "Name": "threadmill-local-http-server-1",
+      "NetIO": "38.6kB / 36kB",
+      "PIDs": "5"
+    }
+  ],
+  "memory_after": [
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.02%",
+      "Container": "396d31690649082959d658c01c207840a1caac47e9e6ebb40a9cf05ff2f40321",
+      "ID": "396d31690649",
+      "MemPerc": "0.26%",
+      "MemUsage": "20.26MiB / 7.654GiB",
+      "Name": "threadmill-local-http-server-1",
+      "NetIO": "221kB / 213kB",
+      "PIDs": "5"
+    }
+  ],
+  "status": "complete"
+}

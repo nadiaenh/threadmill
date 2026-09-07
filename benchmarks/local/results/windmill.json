@@ -1,0 +1,982 @@
+{
+  "backend": "windmill",
+  "date_utc": "2026-09-07T07:37:03.708178+00:00",
+  "host_python": "3.12.8",
+  "jobs_per_batch": 20,
+  "execution_slots": 4,
+  "repeats": 3,
+  "docker": {
+    "ServerVersion": "28.4.0",
+    "Architecture": "aarch64",
+    "NCPU": 8,
+    "MemTotal": 8218316800,
+    "OperatingSystem": "Docker Desktop"
+  },
+  "workloads": [
+    {
+      "sleep_seconds": 0,
+      "samples": [
+        {
+          "elapsed_seconds": 0.22587066562846303,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:10.743158Z",
+              "started_at": "2026-09-07T07:37:10.755486Z",
+              "duration_ms": 29
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.743834Z",
+              "started_at": "2026-09-07T07:37:10.772267Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.743542Z",
+              "started_at": "2026-09-07T07:37:10.759250Z",
+              "duration_ms": 26
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.743885Z",
+              "started_at": "2026-09-07T07:37:10.776263Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.797966Z",
+              "started_at": "2026-09-07T07:37:10.799479Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.799685Z",
+              "started_at": "2026-09-07T07:37:10.816552Z",
+              "duration_ms": 13
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.813442Z",
+              "started_at": "2026-09-07T07:37:10.831164Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.813714Z",
+              "started_at": "2026-09-07T07:37:10.839290Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.830296Z",
+              "started_at": "2026-09-07T07:37:10.840115Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.844455Z",
+              "started_at": "2026-09-07T07:37:10.847240Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.856370Z",
+              "started_at": "2026-09-07T07:37:10.864644Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.860430Z",
+              "started_at": "2026-09-07T07:37:10.879562Z",
+              "duration_ms": 13
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.868229Z",
+              "started_at": "2026-09-07T07:37:10.894494Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.871503Z",
+              "started_at": "2026-09-07T07:37:10.901561Z",
+              "duration_ms": 17
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.886274Z",
+              "started_at": "2026-09-07T07:37:10.909109Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.903525Z",
+              "started_at": "2026-09-07T07:37:10.909236Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.921475Z",
+              "started_at": "2026-09-07T07:37:10.926060Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.923799Z",
+              "started_at": "2026-09-07T07:37:10.926178Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.930481Z",
+              "started_at": "2026-09-07T07:37:10.941570Z",
+              "duration_ms": 13
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.932486Z",
+              "started_at": "2026-09-07T07:37:10.941580Z",
+              "duration_ms": 14
+            }
+          ]
+        },
+        {
+          "elapsed_seconds": 0.2014908748678863,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:10.985393Z",
+              "started_at": "2026-09-07T07:37:11.008308Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.986472Z",
+              "started_at": "2026-09-07T07:37:11.023217Z",
+              "duration_ms": 17
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.986258Z",
+              "started_at": "2026-09-07T07:37:11.009142Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:10.986437Z",
+              "started_at": "2026-09-07T07:37:11.014318Z",
+              "duration_ms": 17
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.029086Z",
+              "started_at": "2026-09-07T07:37:11.033721Z",
+              "duration_ms": 17
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.034005Z",
+              "started_at": "2026-09-07T07:37:11.042093Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.044329Z",
+              "started_at": "2026-09-07T07:37:11.052642Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.058869Z",
+              "started_at": "2026-09-07T07:37:11.067855Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.061235Z",
+              "started_at": "2026-09-07T07:37:11.077438Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.061410Z",
+              "started_at": "2026-09-07T07:37:11.077466Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.074598Z",
+              "started_at": "2026-09-07T07:37:11.083758Z",
+              "duration_ms": 18
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.090566Z",
+              "started_at": "2026-09-07T07:37:11.095325Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.105658Z",
+              "started_at": "2026-09-07T07:37:11.111572Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.105586Z",
+              "started_at": "2026-09-07T07:37:11.109218Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.117173Z",
+              "started_at": "2026-09-07T07:37:11.125856Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.123454Z",
+              "started_at": "2026-09-07T07:37:11.126941Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.133636Z",
+              "started_at": "2026-09-07T07:37:11.141822Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.134969Z",
+              "started_at": "2026-09-07T07:37:11.142208Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.145284Z",
+              "started_at": "2026-09-07T07:37:11.147227Z",
+              "duration_ms": 19
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.153474Z",
+              "started_at": "2026-09-07T07:37:11.156312Z",
+              "duration_ms": 15
+            }
+          ]
+        },
+        {
+          "elapsed_seconds": 0.2163840001448989,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:11.209561Z",
+              "started_at": "2026-09-07T07:37:11.220124Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.209535Z",
+              "started_at": "2026-09-07T07:37:11.211136Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.209707Z",
+              "started_at": "2026-09-07T07:37:11.224165Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.209726Z",
+              "started_at": "2026-09-07T07:37:11.227180Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.243741Z",
+              "started_at": "2026-09-07T07:37:11.261155Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.243742Z",
+              "started_at": "2026-09-07T07:37:11.277855Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.255482Z",
+              "started_at": "2026-09-07T07:37:11.288189Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.256290Z",
+              "started_at": "2026-09-07T07:37:11.292741Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.294637Z",
+              "started_at": "2026-09-07T07:37:11.305626Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.304339Z",
+              "started_at": "2026-09-07T07:37:11.308936Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.313242Z",
+              "started_at": "2026-09-07T07:37:11.321501Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.314378Z",
+              "started_at": "2026-09-07T07:37:11.324731Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.330089Z",
+              "started_at": "2026-09-07T07:37:11.338781Z",
+              "duration_ms": 17
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.334062Z",
+              "started_at": "2026-09-07T07:37:11.340787Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.347319Z",
+              "started_at": "2026-09-07T07:37:11.356779Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.347405Z",
+              "started_at": "2026-09-07T07:37:11.356796Z",
+              "duration_ms": 16
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.362742Z",
+              "started_at": "2026-09-07T07:37:11.373576Z",
+              "duration_ms": 15
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.366519Z",
+              "started_at": "2026-09-07T07:37:11.374286Z",
+              "duration_ms": 18
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.380635Z",
+              "started_at": "2026-09-07T07:37:11.390698Z",
+              "duration_ms": 14
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.382050Z",
+              "started_at": "2026-09-07T07:37:11.393447Z",
+              "duration_ms": 15
+            }
+          ]
+        }
+      ],
+      "median_batch_seconds": 0.2163840001448989,
+      "jobs_per_second": 92.42827559619586
+    },
+    {
+      "sleep_seconds": 0.005,
+      "samples": [
+        {
+          "elapsed_seconds": 0.2501592910848558,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:11.451858Z",
+              "started_at": "2026-09-07T07:37:11.462132Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.451844Z",
+              "started_at": "2026-09-07T07:37:11.458246Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.452095Z",
+              "started_at": "2026-09-07T07:37:11.485273Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.452058Z",
+              "started_at": "2026-09-07T07:37:11.480933Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.488484Z",
+              "started_at": "2026-09-07T07:37:11.502198Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.502086Z",
+              "started_at": "2026-09-07T07:37:11.503259Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.515046Z",
+              "started_at": "2026-09-07T07:37:11.526188Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.515046Z",
+              "started_at": "2026-09-07T07:37:11.526209Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.532773Z",
+              "started_at": "2026-09-07T07:37:11.548854Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.535016Z",
+              "started_at": "2026-09-07T07:37:11.548819Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.563461Z",
+              "started_at": "2026-09-07T07:37:11.571179Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.563472Z",
+              "started_at": "2026-09-07T07:37:11.571194Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.576981Z",
+              "started_at": "2026-09-07T07:37:11.595471Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.579915Z",
+              "started_at": "2026-09-07T07:37:11.595831Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.609086Z",
+              "started_at": "2026-09-07T07:37:11.613359Z",
+              "duration_ms": 24
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.609191Z",
+              "started_at": "2026-09-07T07:37:11.616990Z",
+              "duration_ms": 24
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.623700Z",
+              "started_at": "2026-09-07T07:37:11.638897Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.623744Z",
+              "started_at": "2026-09-07T07:37:11.642585Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.653335Z",
+              "started_at": "2026-09-07T07:37:11.661138Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.653338Z",
+              "started_at": "2026-09-07T07:37:11.661178Z",
+              "duration_ms": 21
+            }
+          ]
+        },
+        {
+          "elapsed_seconds": 0.22939362516626716,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:11.722559Z",
+              "started_at": "2026-09-07T07:37:11.724127Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.723447Z",
+              "started_at": "2026-09-07T07:37:11.736164Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.723333Z",
+              "started_at": "2026-09-07T07:37:11.735211Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.723465Z",
+              "started_at": "2026-09-07T07:37:11.746114Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.757639Z",
+              "started_at": "2026-09-07T07:37:11.759275Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.768847Z",
+              "started_at": "2026-09-07T07:37:11.773221Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.771373Z",
+              "started_at": "2026-09-07T07:37:11.794996Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.771226Z",
+              "started_at": "2026-09-07T07:37:11.782948Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.786719Z",
+              "started_at": "2026-09-07T07:37:11.805677Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.801268Z",
+              "started_at": "2026-09-07T07:37:11.812310Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.817439Z",
+              "started_at": "2026-09-07T07:37:11.821129Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.828640Z",
+              "started_at": "2026-09-07T07:37:11.833726Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.840709Z",
+              "started_at": "2026-09-07T07:37:11.843174Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.841294Z",
+              "started_at": "2026-09-07T07:37:11.856449Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.849257Z",
+              "started_at": "2026-09-07T07:37:11.865531Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.875550Z",
+              "started_at": "2026-09-07T07:37:11.881116Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.875561Z",
+              "started_at": "2026-09-07T07:37:11.881135Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.890844Z",
+              "started_at": "2026-09-07T07:37:11.902853Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.894067Z",
+              "started_at": "2026-09-07T07:37:11.902868Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.905848Z",
+              "started_at": "2026-09-07T07:37:11.923433Z",
+              "duration_ms": 21
+            }
+          ]
+        },
+        {
+          "elapsed_seconds": 0.2776296669617295,
+          "verified": 20,
+          "internal_timings": [
+            {
+              "created_at": "2026-09-07T07:37:11.977476Z",
+              "started_at": "2026-09-07T07:37:12.017756Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.977534Z",
+              "started_at": "2026-09-07T07:37:12.020625Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.977239Z",
+              "started_at": "2026-09-07T07:37:11.998127Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:11.977204Z",
+              "started_at": "2026-09-07T07:37:11.995397Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.026094Z",
+              "started_at": "2026-09-07T07:37:12.028332Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.026107Z",
+              "started_at": "2026-09-07T07:37:12.030332Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.054532Z",
+              "started_at": "2026-09-07T07:37:12.092805Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.054535Z",
+              "started_at": "2026-09-07T07:37:12.094144Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.057515Z",
+              "started_at": "2026-09-07T07:37:12.105279Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.059356Z",
+              "started_at": "2026-09-07T07:37:12.105823Z",
+              "duration_ms": 23
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.126106Z",
+              "started_at": "2026-09-07T07:37:12.129943Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.126163Z",
+              "started_at": "2026-09-07T07:37:12.129975Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.140563Z",
+              "started_at": "2026-09-07T07:37:12.152710Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.140646Z",
+              "started_at": "2026-09-07T07:37:12.152781Z",
+              "duration_ms": 20
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.156574Z",
+              "started_at": "2026-09-07T07:37:12.168275Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.168588Z",
+              "started_at": "2026-09-07T07:37:12.175213Z",
+              "duration_ms": 19
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.182525Z",
+              "started_at": "2026-09-07T07:37:12.190787Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.183267Z",
+              "started_at": "2026-09-07T07:37:12.196346Z",
+              "duration_ms": 22
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.200072Z",
+              "started_at": "2026-09-07T07:37:12.212763Z",
+              "duration_ms": 21
+            },
+            {
+              "created_at": "2026-09-07T07:37:12.209120Z",
+              "started_at": "2026-09-07T07:37:12.220041Z",
+              "duration_ms": 20
+            }
+          ]
+        }
+      ],
+      "median_batch_seconds": 0.2501592910848558,
+      "jobs_per_second": 79.94905931043697
+    }
+  ],
+  "setup": {
+    "version": "CE v1.804.0",
+    "workers": 4,
+    "poll_interval_seconds": 0.01,
+    "mode": "community standard Python workers; deployed scripts",
+    "dependency_lock": "# py: 3.12\n"
+  },
+  "stack_start_and_setup_seconds": 3.789201207924634,
+  "images": [
+    {
+      "ID": "sha256:d5c46decbecc32d0e9fe4887d609e50d93d5911b0617de924cf5443d5a38cbaf",
+      "ContainerName": "threadmill-local-windmill-server-1",
+      "Repository": "ghcr.io/windmill-labs/windmill",
+      "Tag": "1.804.0",
+      "Platform": "linux/arm64",
+      "Size": 3874009036,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:d5c46decbecc32d0e9fe4887d609e50d93d5911b0617de924cf5443d5a38cbaf",
+      "ContainerName": "threadmill-local-windmill-worker-3",
+      "Repository": "ghcr.io/windmill-labs/windmill",
+      "Tag": "1.804.0",
+      "Platform": "linux/arm64",
+      "Size": 3874009036,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:43064e70a75c153a0ea5abed66b08e2981b7b43088bd59fb4b9f1a20ae4b62b0",
+      "ContainerName": "threadmill-local-windmill-db-1",
+      "Repository": "postgres",
+      "Tag": "16",
+      "Platform": "linux/arm64/v8",
+      "Size": 473752970,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:d5c46decbecc32d0e9fe4887d609e50d93d5911b0617de924cf5443d5a38cbaf",
+      "ContainerName": "threadmill-local-windmill-worker-4",
+      "Repository": "ghcr.io/windmill-labs/windmill",
+      "Tag": "1.804.0",
+      "Platform": "linux/arm64",
+      "Size": 3874009036,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:d5c46decbecc32d0e9fe4887d609e50d93d5911b0617de924cf5443d5a38cbaf",
+      "ContainerName": "threadmill-local-windmill-worker-1",
+      "Repository": "ghcr.io/windmill-labs/windmill",
+      "Tag": "1.804.0",
+      "Platform": "linux/arm64",
+      "Size": 3874009036,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:d5c46decbecc32d0e9fe4887d609e50d93d5911b0617de924cf5443d5a38cbaf",
+      "ContainerName": "threadmill-local-windmill-worker-2",
+      "Repository": "ghcr.io/windmill-labs/windmill",
+      "Tag": "1.804.0",
+      "Platform": "linux/arm64",
+      "Size": 3874009036,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "image_digests": [
+    [
+      "ghcr.io/windmill-labs/windmill@sha256:9636cebac9de56580c3e92dc3be9e765620c13108365ea1696861db11fbec9a9"
+    ],
+    [
+      "postgres@sha256:f1c3376c26f2609ab9f29f71f824103fe2fcd8ee0346485cb6122a4f93df6f94"
+    ]
+  ],
+  "warmup": {
+    "elapsed_seconds": 0.2700227093882859,
+    "verified": 20,
+    "internal_timings": [
+      {
+        "created_at": "2026-09-07T07:37:07.789960Z",
+        "started_at": "2026-09-07T07:37:07.836277Z",
+        "duration_ms": 25
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.789899Z",
+        "started_at": "2026-09-07T07:37:07.811250Z",
+        "duration_ms": 26
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.789933Z",
+        "started_at": "2026-09-07T07:37:07.824277Z",
+        "duration_ms": 22
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.789767Z",
+        "started_at": "2026-09-07T07:37:07.797378Z",
+        "duration_ms": 25
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.840389Z",
+        "started_at": "2026-09-07T07:37:07.848525Z",
+        "duration_ms": 24
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.852092Z",
+        "started_at": "2026-09-07T07:37:07.865180Z",
+        "duration_ms": 27
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.853567Z",
+        "started_at": "2026-09-07T07:37:07.874718Z",
+        "duration_ms": 24
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.876451Z",
+        "started_at": "2026-09-07T07:37:07.890180Z",
+        "duration_ms": 25
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.884497Z",
+        "started_at": "2026-09-07T07:37:07.891457Z",
+        "duration_ms": 29
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.897702Z",
+        "started_at": "2026-09-07T07:37:07.901509Z",
+        "duration_ms": 28
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.908429Z",
+        "started_at": "2026-09-07T07:37:07.917559Z",
+        "duration_ms": 29
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.933835Z",
+        "started_at": "2026-09-07T07:37:07.946390Z",
+        "duration_ms": 26
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.936551Z",
+        "started_at": "2026-09-07T07:37:07.950478Z",
+        "duration_ms": 24
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.948325Z",
+        "started_at": "2026-09-07T07:37:07.974792Z",
+        "duration_ms": 25
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.963510Z",
+        "started_at": "2026-09-07T07:37:07.975306Z",
+        "duration_ms": 24
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.979174Z",
+        "started_at": "2026-09-07T07:37:07.985421Z",
+        "duration_ms": 23
+      },
+      {
+        "created_at": "2026-09-07T07:37:07.993616Z",
+        "started_at": "2026-09-07T07:37:08.001766Z",
+        "duration_ms": 23
+      },
+      {
+        "created_at": "2026-09-07T07:37:08.006176Z",
+        "started_at": "2026-09-07T07:37:08.026661Z",
+        "duration_ms": 21
+      },
+      {
+        "created_at": "2026-09-07T07:37:08.006093Z",
+        "started_at": "2026-09-07T07:37:08.011096Z",
+        "duration_ms": 22
+      },
+      {
+        "created_at": "2026-09-07T07:37:08.026590Z",
+        "started_at": "2026-09-07T07:37:08.031192Z",
+        "duration_ms": 22
+      }
+    ]
+  },
+  "memory_before": [
+    {
+      "BlockIO": "0B / 2.64MB",
+      "CPUPerc": "4.74%",
+      "Container": "8a45d0eec954673723c95111012d442a376f37e6830a8bb86d6f4f5738e26c78",
+      "ID": "8a45d0eec954",
+      "MemPerc": "3.20%",
+      "MemUsage": "251.1MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-db-1",
+      "NetIO": "680kB / 539kB",
+      "PIDs": "29"
+    },
+    {
+      "BlockIO": "0B / 8.19kB",
+      "CPUPerc": "8.21%",
+      "Container": "f7870302c79828963dc8402da92f32a873587d8096d2a3981b59535b4d8f5820",
+      "ID": "f7870302c798",
+      "MemPerc": "2.59%",
+      "MemUsage": "203MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-server-1",
+      "NetIO": "8.46MB / 430kB",
+      "PIDs": "48"
+    },
+    {
+      "BlockIO": "0B / 49.2kB",
+      "CPUPerc": "1.01%",
+      "Container": "51c22f266645f63638a5c8789bab6cc2f7face4e0868ddc5758c798eb3216a84",
+      "ID": "51c22f266645",
+      "MemPerc": "0.42%",
+      "MemUsage": "33.02MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-1",
+      "NetIO": "86.3kB / 114kB",
+      "PIDs": "53"
+    },
+    {
+      "BlockIO": "0B / 65.5kB",
+      "CPUPerc": "1.09%",
+      "Container": "59c7ba05f4ed23a79b88ab990c7dbfb93b37931f2e80cc081a50c2f5a6eb657f",
+      "ID": "59c7ba05f4ed",
+      "MemPerc": "0.46%",
+      "MemUsage": "35.77MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-2",
+      "NetIO": "99.5kB / 130kB",
+      "PIDs": "51"
+    },
+    {
+      "BlockIO": "0B / 45.1kB",
+      "CPUPerc": "1.09%",
+      "Container": "ab7c45f4ae11c53efae39eaa0eaa00f8b14801b73f00e3c833158f8e1e0c051a",
+      "ID": "ab7c45f4ae11",
+      "MemPerc": "0.41%",
+      "MemUsage": "32.45MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-3",
+      "NetIO": "77.4kB / 100kB",
+      "PIDs": "49"
+    },
+    {
+      "BlockIO": "0B / 57.3kB",
+      "CPUPerc": "0.90%",
+      "Container": "1d6cb0d754361f74a41f19d728aec662a3793b090765dde817bc351a91f204c9",
+      "ID": "1d6cb0d75436",
+      "MemPerc": "0.43%",
+      "MemUsage": "34.05MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-4",
+      "NetIO": "92.1kB / 117kB",
+      "PIDs": "50"
+    }
+  ],
+  "memory_after": [
+    {
+      "BlockIO": "0B / 11.7MB",
+      "CPUPerc": "5.69%",
+      "Container": "8a45d0eec954673723c95111012d442a376f37e6830a8bb86d6f4f5738e26c78",
+      "ID": "8a45d0eec954",
+      "MemPerc": "3.32%",
+      "MemUsage": "260.1MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-db-1",
+      "NetIO": "1.6MB / 1.23MB",
+      "PIDs": "31"
+    },
+    {
+      "BlockIO": "0B / 8.19kB",
+      "CPUPerc": "6.76%",
+      "Container": "f7870302c79828963dc8402da92f32a873587d8096d2a3981b59535b4d8f5820",
+      "ID": "f7870302c798",
+      "MemPerc": "2.85%",
+      "MemUsage": "223.3MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-server-1",
+      "NetIO": "21.4MB / 1.26MB",
+      "PIDs": "48"
+    },
+    {
+      "BlockIO": "0B / 184kB",
+      "CPUPerc": "0.85%",
+      "Container": "51c22f266645f63638a5c8789bab6cc2f7face4e0868ddc5758c798eb3216a84",
+      "ID": "51c22f266645",
+      "MemPerc": "0.43%",
+      "MemUsage": "33.54MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-1",
+      "NetIO": "204kB / 264kB",
+      "PIDs": "53"
+    },
+    {
+      "BlockIO": "0B / 180kB",
+      "CPUPerc": "1.39%",
+      "Container": "59c7ba05f4ed23a79b88ab990c7dbfb93b37931f2e80cc081a50c2f5a6eb657f",
+      "ID": "59c7ba05f4ed",
+      "MemPerc": "0.46%",
+      "MemUsage": "36.17MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-2",
+      "NetIO": "210kB / 281kB",
+      "PIDs": "51"
+    },
+    {
+      "BlockIO": "0B / 147kB",
+      "CPUPerc": "1.19%",
+      "Container": "ab7c45f4ae11c53efae39eaa0eaa00f8b14801b73f00e3c833158f8e1e0c051a",
+      "ID": "ab7c45f4ae11",
+      "MemPerc": "0.42%",
+      "MemUsage": "32.86MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-3",
+      "NetIO": "177kB / 232kB",
+      "PIDs": "49"
+    },
+    {
+      "BlockIO": "0B / 197kB",
+      "CPUPerc": "1.03%",
+      "Container": "1d6cb0d754361f74a41f19d728aec662a3793b090765dde817bc351a91f204c9",
+      "ID": "1d6cb0d75436",
+      "MemPerc": "0.44%",
+      "MemUsage": "34.59MiB / 7.654GiB",
+      "Name": "threadmill-local-windmill-worker-4",
+      "NetIO": "223kB / 288kB",
+      "PIDs": "50"
+    }
+  ],
+  "status": "complete"
+}

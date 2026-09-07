@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="442" viewBox="0 0 960 442">
+<title>Threadmill demo terminal output</title>
+<desc>Actual demo output showing an interactive job completing while batch workers are occupied, shared process IDs, and expected managed-buffer rejection.</desc>
+<rect width="960" height="442" rx="16" fill="#101820"/>
+<circle cx="28" cy="26" r="5" fill="#fb7185"/><circle cx="46" cy="26" r="5" fill="#fbbf24"/><circle cx="64" cy="26" r="5" fill="#34d399"/>
+<text x="28" y="65" fill="#93c5fd" font-family="monospace" font-size="16">$ python demo.py</text>
+<text x="28" y="100" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">threadmill | background jobs in one process</text>
+<text x="28" y="124" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve"></text>
+<text x="28" y="148" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">JOB            WORKER           RESULT   SAME PID   BUFFER</text>
+<text x="28" y="172" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">-------------------------------------------------------------</text>
+<text x="28" y="196" fill="#6ee7b7" font-family="monospace" font-size="15" xml:space="preserve">interactive    interactive-0    42       yes        4 KiB</text>
+<text x="28" y="220" fill="#6ee7b7" font-family="monospace" font-size="15" xml:space="preserve">Interactive finished while both batch workers were occupied.</text>
+<text x="28" y="244" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve"></text>
+<text x="28" y="268" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">batch-0        batch-0          42       yes        4 KiB</text>
+<text x="28" y="292" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">batch-1        batch-1          42       yes        4 KiB</text>
+<text x="28" y="316" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">batch-2        batch-0          42       yes        4 KiB</text>
+<text x="28" y="340" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve">batch-3        batch-1          42       yes        4 KiB</text>
+<text x="28" y="364" fill="#dbe4ee" font-family="monospace" font-size="15" xml:space="preserve"></text>
+<text x="28" y="388" fill="#fcd34d" font-family="monospace" font-size="15" xml:space="preserve">Budget check: 4 KiB requested / 32 B allowed -&gt; rejected (expected)</text>
+<text x="28" y="412" fill="#6ee7b7" font-family="monospace" font-size="15" xml:space="preserve">All jobs verified. Worker threads shut down.</text>
+</svg>

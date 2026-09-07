@@ -1,0 +1,12 @@
+services:
+  server:
+    image: python:3.12.8-slim
+    command: python /bench/threadmill_server.py
+    working_dir: /bench
+    environment:
+      PYTHONPATH: /code
+    volumes:
+      - .:/bench:ro
+      - ../../threadmill.py:/code/threadmill.py:ro
+    ports:
+      - "127.0.0.1:18080:8000"

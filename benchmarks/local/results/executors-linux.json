@@ -1,0 +1,33 @@
+{
+  "python": "3.12.8",
+  "platform": "Linux-6.10.14-linuxkit-aarch64-with-glibc2.36",
+  "parameters": {
+    "jobs": 1000,
+    "workers": 4,
+    "repeats": 3,
+    "sleep": 0
+  },
+  "results": [
+    {
+      "backend": "threadmill",
+      "startup_plus_warmup_ms": 0.833,
+      "median_batch_ms": 9.827,
+      "jobs_per_second": 101756,
+      "amortized_us_per_job": 9.83
+    },
+    {
+      "backend": "threads",
+      "startup_plus_warmup_ms": 0.581,
+      "median_batch_ms": 7.438,
+      "jobs_per_second": 134450,
+      "amortized_us_per_job": 7.44
+    },
+    {
+      "backend": "processes",
+      "startup_plus_warmup_ms": 102.799,
+      "median_batch_ms": 72.404,
+      "jobs_per_second": 13811,
+      "amortized_us_per_job": 72.4
+    }
+  ]
+}
