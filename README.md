@@ -1,6 +1,6 @@
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)
 
-**threadmill** — lightweight background jobs on dedicated Python threads, in one process.
+**threadmill**: lightweight background jobs on dedicated Python threads, in one process.
 
 Separate worker lanes keep batch jobs from occupying interactive workers. Bounded admission, copied JSON inputs and outputs, cooperative deadlines, and managed-buffer budgets keep trusted jobs predictable. No runtime dependencies.
 

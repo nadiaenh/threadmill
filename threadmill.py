@@ -26,11 +26,28 @@ class BudgetExceeded(RuntimeError):
 
 
 def _encode(value, limit):
-    # The cap bounds retained wire data, not transient serialization allocations.
     data = json.dumps(value, allow_nan=False, separators=(",", ":")).encode()
     if len(data) > limit:
         raise BudgetExceeded(f"JSON payload exceeds {limit} bytes")
     return data
+
+
+def _scrub(exc):
+    """Null tracebacks across the cause/context chain and any groups.
+
+    Idle workers keep the last exception reachable; its frames would pin user
+    objects. Exception attributes can still hold user objects: trusted code only.
+    """
+    pending, seen = [exc], set()
+    while pending:
+        current = pending.pop()
+        if id(current) in seen:
+            continue
+        seen.add(id(current))
+        current.__traceback__ = None
+        pending.extend(e for e in (current.__cause__, current.__context__) if e is not None)
+        if isinstance(current, BaseExceptionGroup):
+            pending.extend(current.exceptions)
 
 
 @dataclass(frozen=True)
@@ -174,27 +191,12 @@ class Scheduler:
                         return encoded
                     result = contextvars.Context().run(invoke)
                 except BaseException as exc:
-                    # Clear chains/groups as well as the outer traceback. Exception
-                    # attributes can still retain user objects: trusted code only.
-                    pending, seen = [exc], set()
-                    while pending:
-                        current = pending.pop()
-                        if id(current) in seen:
-                            continue
-                        seen.add(id(current))
-                        current.__traceback__ = None
-                        pending.extend(e for e in (current.__cause__, current.__context__)
-                                       if e is not None)
-                        if isinstance(current, BaseExceptionGroup):
-                            pending.extend(current.exceptions)
+                    _scrub(exc)
                     error = exc
-                    del current, pending, seen
                 finally:
                     job.peak_managed_bytes = ctx.peak_managed_bytes
                     del ctx, invoke
             job.finished_at = time.monotonic()
-            # Release actual execution capacity before publishing completion, so
-            # a caller can immediately submit again after result() returns.
             slots.release()
             q.task_done()
             if running:
@@ -202,7 +204,6 @@ class Scheduler:
                     job._future.set_result(result)
                 else:
                     job._future.set_exception(error)
-            # Idle threads must not hold the last job's callable/data/result.
             item = job = function = data = result = error = None
 
     def close(self, wait=True):

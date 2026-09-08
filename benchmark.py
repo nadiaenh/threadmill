@@ -21,8 +21,6 @@ def wire_work(data):
 
 
 def measure(kind, workers, jobs, delay, repeats):
-    # Resolve lazy stdlib executor imports before timing pool construction.
-    thread_cls, process_cls = cf.ThreadPoolExecutor, cf.ProcessPoolExecutor
     start = time.perf_counter()
     payload = {"sleep": delay, "value": 41}
     if kind == "threadmill":
@@ -30,9 +28,8 @@ def measure(kind, workers, jobs, delay, repeats):
         submit = lambda: pool.submit(work, payload)
         close = pool.close
     else:
-        cls = {"threads": thread_cls, "processes": process_cls}.get(kind)
-        if kind == "interpreters":
-            cls = cf.InterpreterPoolExecutor
+        cls = {"threads": cf.ThreadPoolExecutor, "processes": cf.ProcessPoolExecutor,
+               "interpreters": getattr(cf, "InterpreterPoolExecutor", None)}[kind]
         kwargs = {"mp_context": multiprocessing.get_context("spawn")} if kind == "processes" else {}
         pool = cls(max_workers=workers, **kwargs)
         submit = lambda: pool.submit(wire_work, json.dumps(payload, allow_nan=False, separators=(",", ":")).encode())
