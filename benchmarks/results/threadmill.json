@@ -1,6 +1,6 @@
 {
   "backend": "threadmill",
-  "date_utc": "2026-09-07T07:36:47.703419+00:00",
+  "date_utc": "2026-09-10T06:56:49.328893+00:00",
   "host_python": "3.12.8",
   "jobs_per_batch": 20,
   "execution_slots": 4,
@@ -17,43 +17,43 @@
       "sleep_seconds": 0,
       "samples": [
         {
-          "elapsed_seconds": 0.03422325011342764,
+          "elapsed_seconds": 0.036682875361293554,
           "verified": 20
         },
         {
-          "elapsed_seconds": 0.019643708132207394,
+          "elapsed_seconds": 0.027942041866481304,
           "verified": 20
         },
         {
-          "elapsed_seconds": 0.015422292053699493,
+          "elapsed_seconds": 0.01633004192262888,
           "verified": 20
         }
       ],
-      "median_batch_seconds": 0.019643708132207394,
-      "jobs_per_second": 1018.1377093059349
+      "median_batch_seconds": 0.027942041866481304,
+      "jobs_per_second": 715.7673048937625
     },
     {
       "sleep_seconds": 0.005,
       "samples": [
         {
-          "elapsed_seconds": 0.07966179214417934,
+          "elapsed_seconds": 0.08748416602611542,
           "verified": 20
         },
         {
-          "elapsed_seconds": 0.08095287531614304,
+          "elapsed_seconds": 0.08775900024920702,
           "verified": 20
         },
         {
-          "elapsed_seconds": 0.09268433274701238,
+          "elapsed_seconds": 0.09837095905095339,
           "verified": 20
         }
       ],
-      "median_batch_seconds": 0.08095287531614304,
-      "jobs_per_second": 247.05731478832038
+      "median_batch_seconds": 0.08775900024920702,
+      "jobs_per_second": 227.89685323677918
     }
   ],
   "setup": null,
-  "stack_start_and_setup_seconds": 1.2800203748047352,
+  "stack_start_and_setup_seconds": 1.2500280002132058,
   "images": [
     {
       "ID": "sha256:70a416d0c62354c379ea7f473f5affd19f23c917adeb3a9c9b7ce39e6f97f3c9",
@@ -71,19 +71,19 @@
     ]
   ],
   "warmup": {
-    "elapsed_seconds": 0.08421866688877344,
+    "elapsed_seconds": 0.07939375005662441,
     "verified": 20
   },
   "memory_before": [
     {
       "BlockIO": "0B / 0B",
       "CPUPerc": "0.02%",
-      "Container": "396d31690649082959d658c01c207840a1caac47e9e6ebb40a9cf05ff2f40321",
-      "ID": "396d31690649",
-      "MemPerc": "0.26%",
-      "MemUsage": "20.42MiB / 7.654GiB",
+      "Container": "431b00921d1cfbe90be2a34382998315304051c670c2b03cda0ff37517239595",
+      "ID": "431b00921d1c",
+      "MemPerc": "0.25%",
+      "MemUsage": "19.48MiB / 7.654GiB",
       "Name": "threadmill-local-http-server-1",
-      "NetIO": "38.6kB / 36kB",
+      "NetIO": "38.8kB / 36.2kB",
       "PIDs": "5"
     }
   ],
@@ -91,12 +91,12 @@
     {
       "BlockIO": "0B / 0B",
       "CPUPerc": "0.02%",
-      "Container": "396d31690649082959d658c01c207840a1caac47e9e6ebb40a9cf05ff2f40321",
-      "ID": "396d31690649",
-      "MemPerc": "0.26%",
-      "MemUsage": "20.26MiB / 7.654GiB",
+      "Container": "431b00921d1cfbe90be2a34382998315304051c670c2b03cda0ff37517239595",
+      "ID": "431b00921d1c",
+      "MemPerc": "0.25%",
+      "MemUsage": "19.52MiB / 7.654GiB",
       "Name": "threadmill-local-http-server-1",
-      "NetIO": "221kB / 213kB",
+      "NetIO": "222kB / 215kB",
       "PIDs": "5"
     }
   ],

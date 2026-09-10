@@ -1,0 +1,396 @@
+{
+  "backend": "airflow",
+  "date_utc": "2026-09-10T06:57:17.951598+00:00",
+  "host_python": "3.12.8",
+  "jobs_per_batch": 20,
+  "execution_slots": 4,
+  "repeats": 3,
+  "docker": {
+    "ServerVersion": "28.4.0",
+    "Architecture": "aarch64",
+    "NCPU": 8,
+    "MemTotal": 8218316800,
+    "OperatingSystem": "Docker Desktop"
+  },
+  "workloads": [
+    {
+      "sleep_seconds": 0,
+      "samples": [
+        {
+          "elapsed_seconds": 5.196260542143136,
+          "verified": 20,
+          "run_id": "bench_f0bcf5415836447e8c37fab633ac59e0",
+          "dag_duration_seconds": 5.004385,
+          "task_duration_seconds": [
+            0.088069,
+            0.083249,
+            0.089235,
+            0.10075,
+            0.084666,
+            0.078949,
+            0.091799,
+            0.094837,
+            0.079361,
+            0.083848,
+            0.085181,
+            0.088508,
+            0.08167,
+            0.106498,
+            0.090938,
+            0.095237,
+            0.089697,
+            0.087117,
+            0.087599,
+            0.08654
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        },
+        {
+          "elapsed_seconds": 6.0468258750624955,
+          "verified": 20,
+          "run_id": "bench_2416233432274921859493608ed6d127",
+          "dag_duration_seconds": 5.110014,
+          "task_duration_seconds": [
+            0.106469,
+            0.098723,
+            0.096665,
+            0.107801,
+            0.098002,
+            0.094898,
+            0.092547,
+            0.096466,
+            0.082419,
+            0.094651,
+            0.090757,
+            0.084983,
+            0.096366,
+            0.094863,
+            0.101609,
+            0.086536,
+            0.088012,
+            0.098953,
+            0.090452,
+            0.083904
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        },
+        {
+          "elapsed_seconds": 5.386665707919747,
+          "verified": 20,
+          "run_id": "bench_f574d08a342c488cb5c890e947083d74",
+          "dag_duration_seconds": 4.412748,
+          "task_duration_seconds": [
+            0.089875,
+            0.089721,
+            0.092793,
+            0.10728,
+            0.107419,
+            0.082398,
+            0.072213,
+            0.078478,
+            0.068187,
+            0.090063,
+            0.084873,
+            0.095195,
+            0.080578,
+            0.082351,
+            0.093967,
+            0.069766,
+            0.095198,
+            0.090826,
+            0.103428,
+            0.104584
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        }
+      ],
+      "median_batch_seconds": 5.386665707919747,
+      "jobs_per_second": 3.7128719479649526
+    },
+    {
+      "sleep_seconds": 0.005,
+      "samples": [
+        {
+          "elapsed_seconds": 4.468209750019014,
+          "verified": 20,
+          "run_id": "bench_1cc0891bf9cf4b0bb316bfee2fa37185",
+          "dag_duration_seconds": 3.584709,
+          "task_duration_seconds": [
+            0.096604,
+            0.079209,
+            0.093206,
+            0.107634,
+            0.100151,
+            0.101884,
+            0.087519,
+            0.065526,
+            0.085764,
+            0.087358,
+            0.082739,
+            0.084119,
+            0.094576,
+            0.095927,
+            0.093016,
+            0.095451,
+            0.092824,
+            0.09549,
+            0.087035,
+            0.096284
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        },
+        {
+          "elapsed_seconds": 6.2920924997888505,
+          "verified": 20,
+          "run_id": "bench_b4f5626a527d44be9fb8bf431d604477",
+          "dag_duration_seconds": 5.301278,
+          "task_duration_seconds": [
+            0.111002,
+            0.104608,
+            0.087403,
+            0.089555,
+            0.101408,
+            0.091503,
+            0.091308,
+            0.087365,
+            0.088644,
+            0.087037,
+            0.097067,
+            0.095928,
+            0.097182,
+            0.097362,
+            0.095118,
+            0.092771,
+            0.091479,
+            0.09287,
+            0.109706,
+            0.097274
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        },
+        {
+          "elapsed_seconds": 5.306780458427966,
+          "verified": 20,
+          "run_id": "bench_9ef36e2c6b1143fdaaaae9987cb4e555",
+          "dag_duration_seconds": 4.911598,
+          "task_duration_seconds": [
+            0.09439,
+            0.092634,
+            0.080958,
+            0.081336,
+            0.089212,
+            0.095259,
+            0.091273,
+            0.095691,
+            0.091596,
+            0.081925,
+            0.093971,
+            0.088449,
+            0.099987,
+            0.099673,
+            0.099267,
+            0.099087,
+            0.128391,
+            0.130938,
+            0.136997,
+            0.124541
+          ],
+          "poll_interval_seconds": 0.05,
+          "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+        }
+      ],
+      "median_batch_seconds": 5.306780458427966,
+      "jobs_per_second": 3.768763406866962
+    }
+  ],
+  "setup": {
+    "backend": "airflow",
+    "executor": "LocalExecutor",
+    "version": "3.3.1",
+    "workers": 4
+  },
+  "stack_start_and_setup_seconds": 15.723552499897778,
+  "images": [
+    {
+      "ID": "sha256:e6d706814a04bc4fe48bc3a0a63aa91061bf2dee6ead4da65008d7729bda120c",
+      "ContainerName": "threadmill-local-airflow-airflow-scheduler-1",
+      "Repository": "apache/airflow",
+      "Tag": "3.3.1-python3.12",
+      "Platform": "linux/arm64",
+      "Size": 2382599657,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:e6d706814a04bc4fe48bc3a0a63aa91061bf2dee6ead4da65008d7729bda120c",
+      "ContainerName": "threadmill-local-airflow-airflow-init-1",
+      "Repository": "apache/airflow",
+      "Tag": "3.3.1-python3.12",
+      "Platform": "linux/arm64",
+      "Size": 2382599657,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:e6d706814a04bc4fe48bc3a0a63aa91061bf2dee6ead4da65008d7729bda120c",
+      "ContainerName": "threadmill-local-airflow-airflow-dag-processor-1",
+      "Repository": "apache/airflow",
+      "Tag": "3.3.1-python3.12",
+      "Platform": "linux/arm64",
+      "Size": 2382599657,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:e6d706814a04bc4fe48bc3a0a63aa91061bf2dee6ead4da65008d7729bda120c",
+      "ContainerName": "threadmill-local-airflow-airflow-apiserver-1",
+      "Repository": "apache/airflow",
+      "Tag": "3.3.1-python3.12",
+      "Platform": "linux/arm64",
+      "Size": 2382599657,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "ID": "sha256:43064e70a75c153a0ea5abed66b08e2981b7b43088bd59fb4b9f1a20ae4b62b0",
+      "ContainerName": "threadmill-local-airflow-postgres-1",
+      "Repository": "postgres",
+      "Tag": "16",
+      "Platform": "linux/arm64/v8",
+      "Size": 473752970,
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "image_digests": [
+    [
+      "apache/airflow@sha256:b01a795dfbd113bbbfdf3ee169b8f27e9a0090ccef105f1a452b3594a11ed316"
+    ],
+    [
+      "postgres@sha256:f1c3376c26f2609ab9f29f71f824103fe2fcd8ee0346485cb6122a4f93df6f94"
+    ]
+  ],
+  "warmup": {
+    "elapsed_seconds": 6.782691916916519,
+    "verified": 20,
+    "run_id": "bench_820d8ce612d2483e9100abb539fca6fc",
+    "dag_duration_seconds": 6.402164,
+    "task_duration_seconds": [
+      1.442055,
+      1.445286,
+      1.442123,
+      1.441758,
+      0.093388,
+      0.094001,
+      0.094994,
+      0.098144,
+      0.101319,
+      0.098831,
+      0.099908,
+      0.099711,
+      0.100818,
+      0.103147,
+      0.093585,
+      0.089294,
+      0.086689,
+      0.105494,
+      0.085828,
+      0.092442
+    ],
+    "poll_interval_seconds": 0.05,
+    "timing_scope": "trigger POST through observed successful DAG completion; XCom verification excluded"
+  },
+  "memory_before": [
+    {
+      "BlockIO": "4.62MB / 38.4MB",
+      "CPUPerc": "0.16%",
+      "Container": "5d66cf54ec9848bd51dc27c974a0cc63d11cc993a5378a936ca7c712a68613a1",
+      "ID": "5d66cf54ec98",
+      "MemPerc": "3.58%",
+      "MemUsage": "280.2MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-apiserver-1",
+      "NetIO": "3.5MB / 1.6MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "1.12MB / 36.5MB",
+      "CPUPerc": "0.91%",
+      "Container": "559db965a37772ce42e777bcdc917c652142bef6753bcc37c4d3cef3d0091346",
+      "ID": "559db965a377",
+      "MemPerc": "2.16%",
+      "MemUsage": "169.5MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-dag-processor-1",
+      "NetIO": "69.9kB / 80.9kB",
+      "PIDs": "3"
+    },
+    {
+      "BlockIO": "3.92MB / 1.67MB",
+      "CPUPerc": "2.55%",
+      "Container": "54b544a9ac0eb35faceb86cb2d472e870867ec9fb3a4530e4bcd137face400ce",
+      "ID": "54b544a9ac0e",
+      "MemPerc": "3.67%",
+      "MemUsage": "288MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-scheduler-1",
+      "NetIO": "766kB / 573kB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "6.93MB / 2.06MB",
+      "CPUPerc": "1.13%",
+      "Container": "59b042c152ba2b76bb95a6032eab83906953f909d3122ac1af7779df1237b36d",
+      "ID": "59b042c152ba",
+      "MemPerc": "0.62%",
+      "MemUsage": "48.38MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-postgres-1",
+      "NetIO": "1.94MB / 4.07MB",
+      "PIDs": "13"
+    }
+  ],
+  "memory_after": [
+    {
+      "BlockIO": "4.62MB / 38.4MB",
+      "CPUPerc": "0.18%",
+      "Container": "5d66cf54ec9848bd51dc27c974a0cc63d11cc993a5378a936ca7c712a68613a1",
+      "ID": "5d66cf54ec98",
+      "MemPerc": "3.69%",
+      "MemUsage": "289.3MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-apiserver-1",
+      "NetIO": "24.7MB / 11.2MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "1.12MB / 36.5MB",
+      "CPUPerc": "1.57%",
+      "Container": "559db965a37772ce42e777bcdc917c652142bef6753bcc37c4d3cef3d0091346",
+      "ID": "559db965a377",
+      "MemPerc": "2.20%",
+      "MemUsage": "172.8MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-dag-processor-1",
+      "NetIO": "199kB / 222kB",
+      "PIDs": "3"
+    },
+    {
+      "BlockIO": "3.93MB / 33.7MB",
+      "CPUPerc": "2.17%",
+      "Container": "54b544a9ac0eb35faceb86cb2d472e870867ec9fb3a4530e4bcd137face400ce",
+      "ID": "54b544a9ac0e",
+      "MemPerc": "4.38%",
+      "MemUsage": "343.1MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-airflow-scheduler-1",
+      "NetIO": "4.65MB / 3.26MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "8.1MB / 10.9MB",
+      "CPUPerc": "4.75%",
+      "Container": "59b042c152ba2b76bb95a6032eab83906953f909d3122ac1af7779df1237b36d",
+      "ID": "59b042c152ba",
+      "MemPerc": "0.67%",
+      "MemUsage": "52.51MiB / 7.654GiB",
+      "Name": "threadmill-local-airflow-postgres-1",
+      "NetIO": "12.3MB / 27.6MB",
+      "PIDs": "13"
+    }
+  ],
+  "status": "complete"
+}

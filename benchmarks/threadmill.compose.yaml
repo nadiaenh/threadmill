@@ -7,6 +7,6 @@ services:
       PYTHONPATH: /code
     volumes:
       - .:/bench:ro
-      - ../../src/threadmill:/code/threadmill:ro
+      - ../src/threadmill:/code/threadmill:ro
     ports:
       - "127.0.0.1:18080:8000"

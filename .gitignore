@@ -6,4 +6,4 @@ build/
 dist/
 
 .DS_Store
-benchmarks/local/results/*.log
+benchmarks/results/*.log

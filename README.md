@@ -9,9 +9,10 @@
 Requires macOS with [Homebrew](https://brew.sh) and Python 3.12 or newer.
 
 ```sh
-git clone https://github.com/nadiaenh/threadmill.git
+git clone git@github.com:nadiaenh/threadmill.git
 cd threadmill
 ./setup.sh
+source .venv/bin/activate
 ```
 
 The optional service comparison additionally needs Docker with about 8 GiB available to its VM (`brew install --cask docker`).
@@ -22,12 +23,8 @@ The optional service comparison additionally needs Docker with about 8 GiB avail
 # Run demo.
 python demo.py
 
-# Unit tests for my own future reference.
-python -m unittest discover -s tests -v
-
-# Run benchmark against Airflow and Windmill.
-python bench.py --jobs 1000
-python bench.py --jobs 200 --sleep 0.005
+# Run benchmarks against local Airflow and local Windmill.
+python benchmarks/run.py
 ```
 
 ```python
@@ -50,3 +47,5 @@ with Scheduler({"interactive": Lane(workers=2, capacity=16)}) as scheduler:
 ## Demo
 
 ![Demo: an interactive job completes while both batch workers are occupied](assets/demo.svg)
+
+![Benchmarks](assets/bench.svg)

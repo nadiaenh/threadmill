@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="200" viewBox="0 0 620 200" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="14">
+  <rect width="620" height="200" fill="#ffffff"/>
+  <!-- header -->
+  <rect x="0" y="0" width="620" height="40" fill="#f4f4f5"/>
+  <text x="16"  y="25" font-weight="600">backend</text>
+  <text x="150" y="25" font-weight="600">20 jobs, no work</text>
+  <text x="320" y="25" font-weight="600">20 jobs, 5ms each</text>
+  <text x="490" y="25" font-weight="600">≈ jobs/sec (no work)</text>
+
+  <!-- rows -->
+  <text x="16" y="70">threadmill</text>
+  <text x="150" y="70">0.028s</text>
+  <text x="320" y="70">0.088s</text>
+  <text x="490" y="70">~700</text>
+
+  <text x="16" y="110">windmill</text>
+  <text x="150" y="110">0.28s</text>
+  <text x="320" y="110">0.27s</text>
+  <text x="490" y="110">~70</text>
+
+  <text x="16" y="150">airflow</text>
+  <text x="150" y="150">5.4s</text>
+  <text x="320" y="150">5.3s</text>
+  <text x="490" y="150">~3.7</text>
+
+  <!-- gridlines -->
+  <g stroke="#e4e4e7" stroke-width="1">
+    <line x1="0" y1="40"  x2="620" y2="40"/>
+    <line x1="0" y1="88"  x2="620" y2="88"/>
+    <line x1="0" y1="128" x2="620" y2="128"/>
+    <line x1="0" y1="168" x2="620" y2="168"/>
+  </g>
+  <rect x="0.5" y="0.5" width="619" height="199" fill="none" stroke="#d4d4d8"/>
+</svg>
