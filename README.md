@@ -48,4 +48,10 @@ with Scheduler({"interactive": Lane(workers=2, capacity=16)}) as scheduler:
 
 ![Demo: an interactive job completes while both batch workers are occupied](assets/demo.svg)
 
-![Benchmarks](assets/bench.svg)
+Local run, 20 jobs per batch, 4 execution slots (medians):
+
+| backend | 20 jobs, no work | 20 jobs, 5ms each | ≈ jobs/sec (no work) |
+|---|---|---|---|
+| threadmill | 0.028s | 0.088s | ~700 |
+| windmill | 0.28s | 0.27s | ~70 |
+| airflow | 5.4s | 5.3s | ~3.7 |
