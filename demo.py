@@ -1,4 +1,4 @@
-"""Run `python demo.py` to see lane separation and cooperative memory budgets."""
+"""Run to see lane separation and cooperative memory budgets: python demo.py."""
 import os
 import threading
 

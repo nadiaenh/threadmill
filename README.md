@@ -1,31 +1,34 @@
-![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)
+<p align="center"> <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white" alt="Python 3.12+"></a> <a href=".github/workflows/checks.yml"><img src="https://github.com/nadiaenh/threadmill/actions/workflows/checks.yml/badge.svg" alt="Checks"></a> </p>
 
-**threadmill**: lightweight background jobs on dedicated Python threads, in one process.
+**threadmill** is a multithreaded framework to run lightweight Python background jobs in one process, without runtime dependencies. It sacrifices durable execution and process execution (which tools like Airflow or Windmill provide) in exchange for sub-millisecond starts using the in-process executor.
 
-Separate worker lanes keep batch jobs from occupying interactive workers. Bounded admission, copied JSON inputs and outputs, cooperative deadlines, and managed-buffer budgets keep trusted jobs predictable. No runtime dependencies.
+<p align="center"><img width="250" src="https://i.pinimg.com/originals/28/b3/c6/28b3c6b3729556e521c37dcc5024f48a.gif" alt="Dinosaur on treadmill"></p>
 
-## One-time setup
+## Setup
 
-Requires Python 3.12 or newer. From this directory:
+Requires macOS with [Homebrew](https://brew.sh) and Python 3.12 or newer.
 
 ```sh
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -e .
+git clone https://github.com/nadiaenh/threadmill.git
+cd threadmill
+./setup.sh
 ```
 
-The demo and tests also run directly from the checkout without installation. The optional Windmill/Airflow comparison requires Docker Compose and a running Docker engine with about 8 GiB available.
+The optional service comparison additionally needs Docker with about 8 GiB available to its VM (`brew install --cask docker`).
 
-## Main usage commands
+## Usage
 
 ```sh
+# Run demo.
 python demo.py
-python -m unittest discover -s tests -v
-python benchmark.py --jobs 1000
-python benchmark.py --jobs 200 --sleep 0.005
-```
 
-Submit a function and JSON-compatible arguments:
+# Unit tests for my own future reference.
+python -m unittest discover -s tests -v
+
+# Run benchmark against Airflow and Windmill.
+python bench.py --jobs 1000
+python bench.py --jobs 200 --sleep 0.005
+```
 
 ```python
 from threadmill import Lane, Scheduler
@@ -44,20 +47,6 @@ with Scheduler({"interactive": Lane(workers=2, capacity=16)}) as scheduler:
     print(job.result(timeout=2))  # {"answer": 42}
 ```
 
-`capacity` counts queued and running jobs; a full lane raises `Overloaded`. `job.cancel()` requests cancellation. Jobs observe cancellation and runtime deadlines through `ctx.checkpoint()` or `ctx.sleep()`; `job.result(timeout=...)` only limits the caller's wait. Exiting the scheduler context drains accepted work.
-
-Use this for **trusted I/O-oriented jobs**. Buffers allocated through `ctx.buffer()` are accounted for, but ordinary allocations, globals, and native code still share the process. Deadlines cannot kill a stuck thread. Jobs are in memory, with no persistence or crash recovery. CPU-bound Python does not gain multicore execution on a normal GIL-enabled build.
-
-To reproduce the local service comparison:
-
-```sh
-python benchmarks/local/run.py
-```
-
-The [benchmark report](benchmarks/RESULTS.md) includes measured results, raw data, and differences in execution guarantees. It compares local standard Windmill workers and Airflow LocalExecutor with the Threadmill HTTP adapter.
-
 ## Demo
 
-The demo occupies both batch workers, completes an interactive job on its own lane, then releases the batch jobs. It verifies that every job shares the caller's PID and demonstrates an expected budget rejection. Worker assignment may vary between runs.
-
-![Threadmill demo: dedicated lanes, shared process, managed-buffer budget](docs/demo.svg)
+![Demo: an interactive job completes while both batch workers are occupied](assets/demo.svg)

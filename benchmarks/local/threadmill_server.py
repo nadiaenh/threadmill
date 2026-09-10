@@ -1,4 +1,3 @@
-"""Benchmark-only loopback HTTP adapter; not a production service."""
 import json
 import threading
 import time

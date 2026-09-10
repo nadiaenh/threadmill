@@ -1,4 +1,4 @@
-"""Equal JSON roundtrip jobs; pool startup and warm batch throughput measured separately."""
+"""Compare threadmill against stdlib executors on equal JSON-roundtrip jobs."""
 import argparse
 import concurrent.futures as cf
 import json
