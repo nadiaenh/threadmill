@@ -2,7 +2,7 @@
 
 **threadmill** is a multithreaded framework to run lightweight Python background jobs in one process, without runtime dependencies. It sacrifices durable execution and process execution (which tools like Airflow or Windmill provide) in exchange for sub-millisecond starts using the in-process executor.
 
-<p align="center"><img width="250" src="assets/threadmill.gif" alt="Spool of thread running"></p>
+<p align="center"><img width="256" src="assets/threadmill.gif" alt="Spool of thread running"></p>
 
 ## Setup
 
